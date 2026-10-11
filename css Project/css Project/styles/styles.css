@@ -1,0 +1,12 @@
+.hero{
+    background-image: url(../media/garage.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+h1{
+    font-size: 75px;
+    color:antiquewhite;
+}
+
