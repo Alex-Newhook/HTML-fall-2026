@@ -8,5 +8,14 @@
 h1{
     font-size: 75px;
     color:antiquewhite;
+    text-align: center;
 }
 
+p{
+    line-height: 1.6;
+    letter-spacing: .01rem;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 25px;
+    word-spacing: 10px;
+}
