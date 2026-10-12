@@ -22,6 +22,59 @@ h2{
     font-style: normal;
 }
 
+.noelle {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dream {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #e9d7c4;
+}
+
+.bell{
+  font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #edcb0c
+}
+
+.teenage1 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.teenage2 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.teenage3 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.teenage4 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ironMaiden;
+    src: url("../fonts/iron_maiden.zip");
+}
 
 
 p{
@@ -31,4 +84,7 @@ p{
     text-align: center;
     font-size: 25px;
     word-spacing: 10px;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
