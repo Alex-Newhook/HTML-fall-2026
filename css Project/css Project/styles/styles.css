@@ -5,7 +5,7 @@
     min-height: 300px;
 }
 */
-h1{
+h1 {
     font-size: 75px;
     text-align: center;
     font-family: "Frijole", system-ui;
@@ -15,7 +15,7 @@ h1{
 
 
 
-h2{
+h2 {
     text-align: center; 
     font-family: "Frijole", system-ui;
     font-weight: 400;
@@ -35,37 +35,17 @@ h2{
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  color: #e9d7c4;
+  color: #d565d1;
 }
 
-.bell{
+.bell {
   font-family: "Brawler", serif;
   font-weight: 700;
   font-style: normal;
   color: #edcb0c
 }
 
-.teenage1 {
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.teenage2 {
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-.teenage3 {
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-.teenage4 {
+.teenage {
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -73,18 +53,67 @@ h2{
 
 @font-face {
     font-family: ironMaiden;
-    src: url("../fonts/iron_maiden.zip");
+    src: url("../fonts/maiden.ttf");
 }
 
+.ironMaiden {
+    font-family: ironMaiden;
+}
+
+.cuss {
+  font-family: "Redacted", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kick {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.block {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.IROC {
+  font-family: "Warnes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mold {
+  font-family: "Rubik Beastly", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fake {
+  font-family: "Monofett", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shake {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 p{
     line-height: 1.6;
     letter-spacing: .01rem;
     white-space: pre-wrap;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     word-spacing: 10px;
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+body {
+    background-image: url(../media/grunge-background.jpg);
 }
