@@ -42,13 +42,16 @@ h2 {
   font-family: "Brawler", serif;
   font-weight: 700;
   font-style: normal;
-  color: #edcb0c
+  color: #edcb0c;
+  font-size: 55px;
 }
 
 .teenage {
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
+    color: #392715;
+    font-size: 55px;
 }
 
 @font-face {
@@ -58,6 +61,8 @@ h2 {
 
 .ironMaiden {
     font-family: ironMaiden;
+    color:#e60d0d;
+    font-size: 55px;
 }
 
 .cuss {
@@ -89,18 +94,23 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #52c43d;
+  font-size: 25px;
 }
 
 .fake {
   font-family: "Monofett", monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 65px;
+  letter-spacing: 10px;
 }
 
 .shake {
   font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
   font-style: normal;
+  font-size: 55px;
+  color: #6c2418;
 }
 
 p{
@@ -116,7 +126,7 @@ p{
 }
 
 body {
-    background-image: url(../media/grunge-background.jpg);
+    background-image: url(../media/grunge-background.avif);
 }
 
 .missin {
