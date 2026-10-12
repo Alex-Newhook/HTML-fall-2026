@@ -1,15 +1,28 @@
-.hero{
+/*.hero{
     background-image: url(../media/garage.jpg);
     background-size: cover;
     background-position: center;
     min-height: 300px;
 }
-
+*/
 h1{
     font-size: 75px;
-    color:antiquewhite;
     text-align: center;
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
+
+h2{
+    text-align: center; 
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 p{
     line-height: 1.6;
