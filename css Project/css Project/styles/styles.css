@@ -1,18 +1,31 @@
-/*.hero{
-    background-image: url(../media/garage.jpg);
+.hero{
     background-size: cover;
     background-position: center;
     min-height: 300px;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+    background-image: linear-gradient(rgba(128, 128, 128, 0.25), rgba(0, 0, 0, 0.4)), url(../media/hero.avif);
 }
-*/
+
 h1 {
     font-size: 75px;
     text-align: center;
     font-family: "Frijole", system-ui;
     font-weight: 400;
     font-style: normal;
+    color: #edebeb;
 }
 
+.hero h1,
+.hero h2 {
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+}
 
 
 h2 {
@@ -20,30 +33,55 @@ h2 {
     font-family: "Frijole", system-ui;
     font-weight: 400;
     font-style: normal;
+     color: #edebeb;
+}
+
+h3 {
+    color: transparent;
+}
+
+p{
+    line-height: 1.6;
+    letter-spacing: .01rem;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 40px;
+    word-spacing: 10px;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../media/grunge-background.avif);
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .noelle {
-  font-family: "Emilys Candy", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2737b3e5; 
 }
 
 .dream {
-  font-family: "DynaPuff", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 100;
-  color: #d565d1;
+    color: #d565d1;
 }
 
 .bell {
-  font-family: "Brawler", serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #edcb0c;
-  font-size: 55px;
+    font-family: "Brawler", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #edcb0c;
+    font-size: 55px;
 }
 
 .teenage {
@@ -55,92 +93,141 @@ h2 {
 }
 
 @font-face {
-    font-family: ironMaiden;
+    font-family: "ironMaiden";
     src: url("../fonts/maiden.ttf");
 }
 
 .ironMaiden {
-    font-family: ironMaiden;
+    font-family: "ironMaiden";
     color:#e60d0d;
     font-size: 55px;
 }
 
 .cuss {
-  font-family: "Redacted", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.kick {
-  font-family: "Bangers", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.block {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.IROC {
-  font-family: "Warnes", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.mold {
-  font-family: "Rubik Beastly", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  color: #52c43d;
-  font-size: 25px;
-}
-
-.fake {
-  font-family: "Monofett", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65px;
-  letter-spacing: 10px;
-}
-
-.shake {
-  font-family: "Rubik Glitch", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 55px;
-  color: #6c2418;
-}
-
-p{
-    line-height: 1.6;
-    letter-spacing: .01rem;
-    white-space: pre-wrap;
-    text-align: center;
-    font-size: 40px;
-    word-spacing: 10px;
-    font-family: "Cabin Sketch", sans-serif;
-    font-weight: 700;
+    font-family: "Redacted", system-ui;
+    font-weight: 400;
     font-style: normal;
 }
 
-body {
-    background-image: url(../media/grunge-background.avif);
+.kick {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.block {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.IROC {
+    font-family: "Warnes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mold {
+    font-family: "Rubik Beastly", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #52c43d;
+    font-size: 25px;
+}
+
+.fake {
+    font-family: "Monofett", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    letter-spacing: 10px;
+}
+
+.shake {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    color: #6c2418;
 }
 
 .missin {
-  display: inline-flex;
-  align-items: flex-end; 
-  font-family: "Cabin Sketch", sans-serif;
-  font-size: 55px;
-  vertical-align: middle;
+    display: inline-flex;
+    align-items: flex-end; 
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 55px;
+    vertical-align: middle;
 }
 
 .missin span {
-  display: inline-block;
-  font-size: calc(100% - (var(--i) * 0.12em));
-  transform: translateY(calc(var(--i) * 1px));
-  margin-right: 2px;
+    display: inline-block;
+    font-size: calc(100% - (var(--i) * 0.12em));
+    transform: translateY(calc(var(--i) * 1px));
+    margin-right: 2px;
 }
 
+.friday {
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+    font-size: 55px;
+}
+
+.dirtbag {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 40px;
+    font-size: 65px;
+    color: #524020;
+
+}
+
+.lonely {
+    font-size: 25px;
+    color: #52504c;
+    margin-left: 30px;
+}
+
+.socks {
+    font-size: 55px;
+    font-family: "Cabin Sketch", sans-serif;
+    background: linear-gradient(to right, #c7b45fea, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+.walkin {
+    display: inline-flex;
+    align-items: flex-end;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 40px; 
+    vertical-align: baseline;
+}
+
+.walkin span {
+    display: inline-block;
+    font-size: calc(100% + (var(--i) * 0.15em)); 
+    line-height: 1;
+    margin-right: 4px;
+}
+
+
+footer > p {
+    font-size: 15px;
+}
