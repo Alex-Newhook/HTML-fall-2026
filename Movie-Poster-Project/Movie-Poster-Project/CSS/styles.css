@@ -1,0 +1,10 @@
+body {
+    background-image: url("../IMG/Main-Image.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
