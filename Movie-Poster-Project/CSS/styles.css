@@ -10,11 +10,12 @@ body {/*using the vh height to set the height for the browser, setting up a flex
 
 .poster-div {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     display: block;
 }
 
-.poster-image {/* setting the background image */
+.poster-image {
+        /* setting the background image */
     height: 100%;
     width: auto;
     display: block;
@@ -53,7 +54,7 @@ body {/*using the vh height to set the height for the browser, setting up a flex
 }
 
 .title {
-    font-family: "spiderman";/*Used my custom font to match with the original poster */
+    font-family: "spiderman", sans-serif;/*Used my custom font to match with the original poster */
     font-size: 30px;
     color: #ffffff;
     margin: 0px;
@@ -75,7 +76,7 @@ body {/*using the vh height to set the height for the browser, setting up a flex
     color: transparent;
 }
 .title-cont {/*code same as title, just different values to properly align bottom part of title */
-    font-family: "spiderman";
+    font-family: "spiderman", sans-serif;
     font-size: 69px;
     color: #ffffff;
     letter-spacing: 4px;
@@ -97,7 +98,7 @@ body {/*using the vh height to set the height for the browser, setting up a flex
 }
 
 .three-d {
-    font-family: "spiderman";
+    font-family: "spiderman", sans-serif;
     font-size: 31px;
     color: #f4454b;
     margin: 0px;
@@ -141,7 +142,7 @@ body {/*using the vh height to set the height for the browser, setting up a flex
 }
 
 .date { /*styling the date at the bottom of the page */
-    font-family: "spiderman";
+    font-family: "spiderman", sans-serif;
     font-size: 35px;
     color: #ffffff;
     letter-spacing: 3px;
