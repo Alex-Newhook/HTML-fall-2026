@@ -1,4 +1,4 @@
-body {
+body {/*using the vh height to set the height for the browser, setting up a flexbox to arrange all the elements of my poster and setting the default background colour */
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -12,35 +12,39 @@ body {
     position: relative;
     height: 100vh;
     display: block;
-    align-items: center;
 }
 
 .poster-image {
+        /* setting the background image */
     height: 100%;
     width: auto;
     display: block;
 }
 
-@font-face {
+@font-face { /*Using font-face to set up my custom font*/
     font-family: "spiderman";
-    src: url("../fonts/Megahertz\ In\ Italic.otf");
+    src: url("/fonts/Megahertz\ In\ Italic.otf");
 }
 
-.poster-text {
+
+
+.poster-text {/*setting up rules for all our text as a container, using flec column so the elements naturally stack */
     position: absolute;
     bottom: 0;
     width: 100%;
     height: auto;
-    display: flex;                
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;    
+    justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
     margin: 0;
     padding: 0 8px 12px 8px;
 }
 
-.poster-title {     
+
+
+.poster-title {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,49 +54,50 @@ body {
 }
 
 .title {
-    font-family: "spiderman";
+    font-family: "spiderman";/*Used my custom font to match with the original poster */
     font-size: 30px;
     color: #ffffff;
     margin: 0px;
-    margin-top: -41px;    
+    margin-top: -41px;/*Pulls "SPIDER-MAN" upward as it was naturally sitting too low, working in combo with margin bottom to set the correct height to match the poster*/
     margin-bottom: 41px;
     letter-spacing: 4px;
     line-height: 0.5;
     margin-right: 26px;
-    background: linear-gradient(
-        to bottom,
-        white 0%,
-        white 55%,
-        grey 100%
-    );
-    background-clip: text;
+    background: linear-gradient(/*Used W3 schools to use the linear gradient property to achieve the shadowing gradient on the letters https://www.w3schools.com/css/css3_gradients.asp */
+
+            to bottom,
+
+            white 0%,
+
+            white 55%,
+
+            grey 100%);
+    background-clip: text;/*used W3 achools yo apply the background clip text property, this allows my gradient to apply to my text */
     color: transparent;
 }
-
-
-
-.title-cont {
+.title-cont {/*code same as title, just different values to properly align bottom part of title */
     font-family: "spiderman";
     font-size: 69px;
     color: #ffffff;
     letter-spacing: 4px;
     line-height: 0.5;
     margin: 0px;
-    margin-top: -38px;   
+    margin-top: -38px;
     margin-right: 29px;
     position: relative;
     background: linear-gradient(
-        to bottom,
-        white 0%,
-        white 55%,
-        grey 100%
-    );
+            to bottom,
+
+            white 0%,
+
+            white 55%,
+            
+            grey 100%);
     background-clip: text;
     color: transparent;
 }
 
-
-.three-d{
+.three-d {
     font-family: "spiderman";
     font-size: 31px;
     color: #f4454b;
@@ -100,62 +105,53 @@ body {
     line-height: 1;
 }
 
-.poster-credits{
+.poster-credits {/*container for all of our credit text, this is to avoid needing to style individually */
     font-family: "Saira Condensed", sans-serif;
     font-weight: 200;
-    font-size: 7.5px;            
-    letter-spacing: -0.6px;    
-    word-spacing: 0px;      
+    font-size: 7.5px;
+    letter-spacing: -0.6px;
+    word-spacing: 0.3px;
     line-height: 1.15;
+    text-align: center;
     color: #cccccc;
     width: 95%;
     margin: 0;
 }
 
-.credit{
-    text-align: center;
-}
-
-.credit-2{
-    text-align: center;
-}
-
-.credit-3{
-    text-align: center;
-}
-
-.credit-4{
-    text-align: center;
-}
-
-
-
-.poster-details {
+.poster-details {  /*container for the poster details at the bottom of the page, it is the class for the footer*/
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px;
 }
-
-.site{
+.site { /*where I linked the imdb, if they had an official site would list that, also matches with the original poster so will have the hyperlink lead to a different page than it says to maintain similarity. Using tet decoration none to remove the default underline and make it look more like the reference image*/
     font-size: 7px;
     color: #cccccc;
     line-height: 1.2;
     margin: 0px;
+    text-decoration: none;
 }
 
-.date{
+.trailer {
+    font-size: 7px;
+    color: #cccccc;
+    line-height: 1;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.date { /*styling the date at the bottom of the page */
     font-family: "spiderman";
     font-size: 35px;
     color: #ffffff;
     letter-spacing: 3px;
     line-height: 1;
     margin: 0px;
-    margin-bottom: 0px;
+    margin-top: -4px;
 }
 
-.micro{
+.micro {
     font-size: 1px;
     color: #cccccc;
     margin: 0px;
@@ -163,7 +159,7 @@ body {
     line-height: 1;
 }
 
-.stack{
+.stack { /* using inline-block with vertical align to do the part of the credits where the text goes above itself while staying inline with the rest of the <p>, this allows me to stack it and adjust the height */
     display: inline-block;
     font-size: 4px;
     line-height: 0.9;
@@ -172,52 +168,51 @@ body {
     margin: 0 2px;
 }
 
-.small{
+.small {/*targeting the smaller text from the paragraphs with a class*/
     font-size: 6px;
     font-weight: 400;
-    color: #999999;}
-
-.poster-credits p {
-    margin: 0;
+    color: #999999;
 }
 
 
 
-.rating {
+.poster-credits p { /*setting a default margin so it doesnt mess with the layout*/
+    margin: 0;
+}
+
+.rating { /*using the same code for all of the logos more or less, positioning based on matching the refernce poster, using display block to allow for easier layout design and better positioning in reference to the credits. Using position absolute to move the elements more freely accross the page*/
     left: 160px;
     top: 70px;
     position: absolute;
-    bottom: 12px;
-    height: 18px; 
+    height: 18px;
     width: auto;
     display: block;
 }
 
-.marvel{
+.marvel {
     left: 20px;
     top: 65px;
     position: absolute;
-    bottom: 12px;
-    height: 23px; 
+    height: 23px;
     width: auto;
     display: block;
 }
 
-.credit > sup{
+.credit>sup { /*targeting the trademark so I can reduce the default size*/
     font-size: 3px;
 }
 
-.tiny-writing{
+.tiny-writing {
     font-size: 2.3px;
     margin: 0;
     left: 70px;
-    top: 78px;
+    top: 77px;
     position: absolute;
     text-align: center;
     color: #cccccc;
 }
 
-.score{
+.score {
     height: 13px;
     width: auto;
     right: 150px;
@@ -225,7 +220,7 @@ body {
     position: absolute;
 }
 
-.three{
+.three {
     height: 13px;
     width: auto;
     right: 110px;
@@ -233,7 +228,7 @@ body {
     position: absolute;
 }
 
-.sony{
+.sony {
     height: 13px;
     width: auto;
     right: 60px;
@@ -241,7 +236,7 @@ body {
     position: absolute;
 }
 
-.columbia{
+.columbia {
     height: 13px;
     width: auto;
     right: 20px;
