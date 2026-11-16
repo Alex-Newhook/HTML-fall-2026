@@ -23,7 +23,7 @@ body {/*using the vh height to set the height for the browser, setting up a flex
 
 @font-face { /*Using font-face to set up my custom font*/
     font-family: "spiderman";
-    src: url("/fonts/Megahertz\ In\ Italic.otf");
+    src: url("../fonts/Megahertz\ In\ Italic.otf");
 }
 
 
